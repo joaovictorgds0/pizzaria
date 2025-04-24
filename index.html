@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pizzaria Soli Deo Gloria</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" href="img/favicon.jpg" type="image/jpg">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Cardápio</a></li>
+        <li><a href="#contact">Contato</a></li>
+        <li><a href="carrinho.html">Carrinho (<span id="carrinhoCount">0</span>)</a></li>      
+    </ul>
+    </nav>
+  </header>
+
+  <section id="home"> 
+    <div class="hero">
+    <h1>Bem-vindo à Pizzaria Soli Deo Gloria</h1>
+    <p>Saborosas pizzas feitas especialmente para você!</p>
+    <a href="#menu" class="cta-button">Ver Cardápio</a>
+    </div>
+  </section>
+
+  <section id="menu">
+    <h2>Cardápio</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="img/pexels-engin-akyurt-2260208 (1).jpg" alt="Pizza Calvino" />
+        <h3>Pizza Calvino</h3>
+        <p>Molho de tomate, mussarela.</p>
+        <button onclick="addToCart('Pizza Calvino')">Adicionar ao Carrinho</button>
+      </div>
+      <div class="menu-item">
+        <img src="img/pexels-engin-akyurt-2260208 (1).jpg" alt="Pizza Genebra" />
+        <h3>Pizza Genebra</h3>
+        <p>Molho de tomate, pepperoni, queijo mussarela.</p>
+        <button onclick="addToCart('Pizza Genebra')">Adicionar ao Carrinho</button>
+      </div>
+      <div class="menu-item">
+        <img src="img/pexels-engin-akyurt-2260208 (1).jpg" alt="Pizza Depravação Total" />
+        <h3>Pizza Depravação Total</h3>
+        <p>Molho de tomate, mussarela, parmesão, gorgonzola, provolone.</p>
+        <button onclick="addToCart('Pizza Depravação Total')">Adicionar ao Carrinho</button>
+      </div>
+      <div class="menu-item">
+        <img src="img/pexels-engin-akyurt-2260208 (1).jpg" alt="Pizza Westminster" />
+        <h3>Pizza Westminster</h3>
+        <p>Molho de tomate, calabresa, cebola, queijo mussarela.</p>
+        <button onclick="addToCart('Pizza Westminster')">Adicionar ao Carrinho</button>
+      </div>
+      <div class="menu-item">
+        <img src="img/pexels-engin-akyurt-2260208 (1).jpg" alt="Pizza Eleição Incondicional" />
+        <h3>Pizza Eleição Incondicional</h3>
+        <p>Molho de tomate, pimentões, cogumelos, azeitonas, queijo mussarela.</p>
+        <button onclick="addToCart('Pizza Eleição Incondicional')">Adicionar ao Carrinho</button>
+      </div>
+      <div class="menu-item">
+        <img src="img/pexels-engin-akyurt-2260208 (1).jpg" alt="Pizza Graça Irresistível" />
+        <h3>Pizza Graça Irresistível</h3>
+        <p>Molho de tomate, frango desfiado, catupiry, milho, queijo mussarela.</p>
+        <button onclick="addToCart('Pizza Graça Irresistível')">Adicionar ao Carrinho</button>
+      </div>
+      <div class="menu-item">
+        <img src="img/pexels-engin-akyurt-2260208 (1).jpg" alt="Pizza Perseverança dos Santos" />
+        <h3>Pizza Perseverança dos Santos</h3>
+        <p>Molho de tomate, presunto, ovos, cebola, azeitonas, queijo mussarela.</p>
+        <button onclick="addToCart('Pizza Perseverança dos Santos')">Adicionar ao Carrinho</button>
+      </div>
+      <div class="menu-item">
+        <img src="img/pexels-engin-akyurt-2260208 (1).jpg" alt="Pizza Expiação Limitada" />
+        <h3>Pizza Expiação Limitada</h3>
+        <p>Molho de tomate, pepperoni, pimentões, cebola roxa, azeitonas, queijo mussarela.</p>
+        <button onclick="addToCart('Pizza Expiação Limitada')">Adicionar ao Carrinho</button>
+      </div>
+      <div class="menu-item">
+        <img src="img/pexels-engin-akyurt-2260208 (1).jpg" alt="Pizza Reforma Protestante" />
+        <h3>Pizza Reforma Protestante</h3>
+        <p>Molho de tomate, presunto, abacaxi, queijo mussarela.</p>
+        <button onclick="addToCart('Pizza Reforma Protestante')">Adicionar ao Carrinho</button>
+      </div>
+      <div class="menu-item">
+        <img src="img/pexels-engin-akyurt-2260208 (1).jpg" alt="Pizza 95 Teses" />
+        <h3>Pizza 95 Teses</h3>
+        <p>Molho de tomate, mussarela de búfala, tomate fresco, manjericão, azeite de oliva.</p>
+        <button onclick="addToCart('Pizza 95 Teses')">Adicionar ao Carrinho</button>
+      </div>
+      <div class="menu-item">
+        <img src="img/pexels-engin-akyurt-2260208 (1).jpg" alt="Pizza Cinco Pontos" />
+        <h3>Pizza Cinco Pontos</h3>
+        <p>Molho de tomate, carne de sol desfiada, cebola roxa, queijo mussarela.</p>
+        <button onclick="addToCart('Pizza Cinco Pontos')">Adicionar ao Carrinho</button>
+      </div>
+      <div class="menu-item">
+        <img src="img/pexels-engin-akyurt-2260208 (1).jpg" alt="Pizza Soli Deo Gloria" />
+        <h3>Pizza Soli Deo Gloria</h3>
+        <p>Molho de tomate, tomate fresco, mussarela de búfala, manjericão, azeite de oliva.</p>
+        <button onclick="addToCart('Pizza Soli Deo Gloria')">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </section>  
+
+  <section id="contact" class="section section-contact">
+    <div class="container">
+      <h2 class="section-title">Contato</h2>
+      <p class="section-description">Fale com a gente para fazer seu pedido ou tirar dúvidas:</p>
+      <address class="contact-info">
+        <p>
+          <strong>Endereço:</strong><br>
+          Avenida Caxangá, nº 123<br>
+          Aldeia, Recife/PE - CEP: 12345-678
+        </p>
+        <p>
+          <strong>Telefone:</strong> <a href="tel:+558112345678">(81) 1234-5678</a><br>
+          <strong>E-mail:</strong> <a href="mailto:contato@solideogloria.com">contato@solideogloria.com</a>
+        </p>
+        <p>
+          <strong>Horário de Funcionamento:</strong><br>
+          Segunda a Sábado: 11h00 às 23h00<br>
+          Domingo: Fechado (Dia do Senhor)
+        </p>
+      </address>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 João Victor Gomes. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carrinho - Pizzaria Soli Deo Gloria</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="carrinho.css" />
+  <script src="script.js" defer></script>
+  <script src="carrinho.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#menu">Cardápio</a></li>
+        <li><a href="index.html#contact">Contato</a></li>
+        <li><a href="carrinho.html">Carrinho (<span id="carrinhoCount">0</span>)</a></li>      
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Seu Carrinho</h2>
+    <ul id="lista-carrinho"></ul>
+    <p>Total: <strong id="total">R$ 0,00</strong></p>
+    <button onclick="finalizarCompra()">Finalizar Compra</button>
+  </main>
+</body>
+</html>
